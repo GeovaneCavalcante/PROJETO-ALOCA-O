@@ -5,42 +5,46 @@
 {% block conteiner %}
 <div class="container">
     <div class="row">
-        <div class="col-lg-4 col-sm-2 col-xs-1"></div>
-        <div class="col-lg-4 col-sm-8 col-xs-10">
+        <div class="col-lg-2 col-sm-1 col-xs-0"></div>
+        <div class="col-lg-5 col-sm-5 col-xs-12">
             <div id="ajustes"></div>
-            <form>
+            <form action="" method="post">
+                {% csrf_token %}
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5"></div>
+                        <div class="col-lg-4 col-sm-10 col-xs-0">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Primeiro Nome</label>
+                                    <input type="text" class="form-control" name="primeiro_nome" id="exampleInputEmail1" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Segundo Nome</label>
+                                    <input type="text" class="form-control" name="segundo_nome" id="exampleInputEmail1" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Nome de Usuário</label>
+                                    <input type="text" class="form-control" name="nome_usuario"  id="exampleInputEmail1" placeholder="User Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-10 col-xs-0">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">E-mail</label>
+                                <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Senha</label>
+                                <input type="password" class="form-control" name="senha" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                        </div>
+                        <div id="class_b" class="col-lg-8 col-sm-9 col-xs-0">
+                            <button type="submit" class="btn btn-default">Cadastrar</button>
+                             <button type="submit" class="btn btn-default">Cancelar</button>
+                        </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5"></div>
-                    </div>
-                </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Nome de Usuário</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="User Name">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">E-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Primeiro Nome</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Segundo Nome</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
-              </div>
-              <button type="submit" class="btn btn-default">Cadastrar</button>
-              <button type="submit" class="btn btn-default">Cancelar</button>
+
             </form>
         </div>
     </div>
