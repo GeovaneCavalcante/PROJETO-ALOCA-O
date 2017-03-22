@@ -6,3 +6,7 @@ class Form_User(forms.Form):
     segundo_nome = forms.CharField(label='segundo_nome', max_length=40)
     email = forms.EmailField(label='email')
     senha = forms.CharField(label='senha', max_length=50)
+
+class Login_Form(forms.Form):
+    login = forms.CharField(label="login", max_length=50)
+    senha = forms.CharField(label="Senha", max_length=50)

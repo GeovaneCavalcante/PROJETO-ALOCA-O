@@ -1,11 +1,52 @@
-#ajustes{
-    padding-top: 30%;
+#bute{
+    padding-top: 6%;
 }
 
-#ca{
-    padding-top: 50%;
+#titulo{
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    font-weight: 900;
+    margin-left: 2%;
+    margin-bottom: 0%;
+}
+#titulo2{
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+    font-weight: 900;
+    padding-bottom: 13%;
+    padding-top: 7%;
+    margin: 0px;
+}
+label{
+    text-shadow: black 0.1em 0.1em 0.1em ;
+    color: white;
+}
+#prince{
+    background: #aa0122;
+    margin-top: -50px;
+    padding-top: 5%;
+    padding-bottom: 25%;
+}
+#logo{
+    width: 110%;
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #logo{
+         width: 120%;
+    }
+    #titulo2{
+        text-align: center;
+        font-size: 220%;
+    }
+    #titulo{
+       text-align: center;
+       padding-top: 10%;
+    }
 }
 
-#class_b{
-    margin-top: 2%;
-}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

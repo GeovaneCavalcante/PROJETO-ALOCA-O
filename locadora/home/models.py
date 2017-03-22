@@ -9,3 +9,9 @@ class Usuario(models.Model):
 
     def __str__(self):
         return (self.nome_usuario)
+class Login(models.Model):
+    login = models.CharField("Login", max_length=50)
+    senha = models.CharField("Senha", max_length=50)
+
+    def __str__(self):
+        return self.login
