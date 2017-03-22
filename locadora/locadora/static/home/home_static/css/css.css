@@ -32,9 +32,24 @@ label{
     width: 110%;
 }
 
-@media only screen and (min-width : 320px) {
-     #logo{
-         width: 100%;
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+}
+@media (max-width: @screen-xs-max) {
+    #logo{
+         width: 120%;
     }
     #titulo2{
         text-align: center;
@@ -46,45 +61,14 @@ label{
        padding-top: 10%;
     }
 }
-
-@media only screen and (max-width : 768px) {
-      #logo{
-         width: 100%;
-    }
-    #titulo2{
-        text-align: center;
-        font-size: 260%;
-        margin-left: -45px;
-    }
-    #titulo{
-       text-align: center;
-       padding-top: 10%;
-    }
-}
-/*
-@media only screen and (min-width : 1024px) {
-#logo{
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    #logo{
         width: 80%;
-     }
+    }
      #titulo2{
         font-size: 480%;
         margin-right: 50%;
     }
-}
-@media only screen and (max-width : 1366px) {
-#logo{
-        width: 80%;
-     }
-     #titulo2{
-        font-size: 480%;
-        margin-right: 50%;
-    }
-}
-
- #logo{
-        width: 80%;
-     }
-     #titulo2{
-        font-size: 480%;
-        margin-right: 50%;
-    }
+ }
+@media (min-width: @screen-lg-min) { ... }
